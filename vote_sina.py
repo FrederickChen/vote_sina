@@ -35,7 +35,13 @@ awards =[
          {'id':'lcxyk19bkzhpxcxsjyh400603','disp': '最具创新手机银行'}
          ]
 rank_url = 'http://support.finance.sina.com.cn/service/api/openapi.php/VoteService.getRank'
-post_data='ids=lcxyk19bkzhpxppyh400103,lcxyk19bkzhpxcxyh400203,lcxyk19bkzhpxtyyh400303,lcxyk19bkzhpxsjyh400403,lcxyk19bkzhpxhysjyh400503,lcxyk19bkzhpxcxsjyh400603&appid=yinhangzh19&page=1&pagesize=194'
+post_data='ids=lcxyk19bkzhpxppyh400103,\
+lcxyk19bkzhpxcxyh400203,\
+lcxyk19bkzhpxtyyh400303,\
+lcxyk19bkzhpxsjyh400403,\
+lcxyk19bkzhpxhysjyh400503,\
+lcxyk19bkzhpxcxsjyh400603\
+&appid=yinhangzh19&page=1&pagesize=194'
 headers['Origin'] = 'http://finance.sina.com.cn'
 headers['Content-Type']='application/x-www-form-urlencoded; charset=UTF-8'
 
