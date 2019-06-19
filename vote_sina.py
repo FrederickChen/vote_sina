@@ -56,7 +56,7 @@ def get_rank(session):
     return True
 
 #Vote function
-#Params: id 
+#Params: session,id,disp 
 def vote_sina(session,id,disp):
     params['id'] = id
     timestamp = int(datetime.now().timestamp()*1000) #time.time()
