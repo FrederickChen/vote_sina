@@ -61,7 +61,7 @@ def vote_sina(session,id,disp):
     params['id'] = id
     timestamp = int(datetime.now().timestamp()*1000) #time.time()
     params['callback'] = 'jsonp_'+str(timestamp)
-    params['_'] = str(timestamp+3)
+    params['_'] = str(timestamp+1)
     try:
         resp = session.get(vote_url, params=params, headers=headers,proxies=proxies)
         resp.raise_for_status()
