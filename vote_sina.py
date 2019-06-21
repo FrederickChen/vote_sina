@@ -21,15 +21,13 @@ headers = {'Host':'support.finance.sina.com.cn',
            'Accept-Language': 'zh-CN',
            'Accept-Encoding':'gzip, deflate',
            'Connection': 'Keep-Alive'}
-#headers['X-Forwarded-For']='129.78.138.66'
-#headers['X-Real-Ip']='129.78.138.66'
+
 vote_url = 'http://support.finance.sina.com.cn/service/api/openapi.php/VoteService.setVote'
 params = {'appid':'yinhangzh19','openid': '','enopenid':'','opflag':'','optime':'','wxflag':'0','captcode':'','roller_id':''}
 params['uuid'] = uuid.uuid1().hex
 proxies = urllib.request.getproxies()
 
 rank_url = 'http://support.finance.sina.com.cn/service/api/openapi.php/VoteService.getRank'
-#post_data='ids=lcxyk19bkzhpxppyh400103,lcxyk19bkzhpxcxyh400203,lcxyk19bkzhpxtyyh400303,lcxyk19bkzhpxsjyh400403,lcxyk19bkzhpxhysjyh400503,lcxyk19bkzhpxcxsjyh400603&appid=yinhangzh19&page=1&pagesize=194'
 headers['Origin'] = 'http://finance.sina.com.cn'
 headers['Content-Type']='application/x-www-form-urlencoded; charset=UTF-8'
 awards =[
